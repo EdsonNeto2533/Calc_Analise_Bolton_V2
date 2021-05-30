@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout">
+
+
+    //puxa a toolbar
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/drawer_toolbar"
+        />
+
+    //content_main vai ser o conteudo dentro da pagina
+    //como se fosse a main activity
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_main"
+        />
+
+    //tudo ate aqui é da tela central, o que vai vir agora em diante é a tela que fica
+    //contraida na esquerda
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Nav_View"
+        app:menu="@menu/drawer_menu"
+
+        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+    // um sonho, entender o android:fitsSystemWindows
+    //o layout_gravity joga o menu para a esquerda = start e direita = end
+    //ja adiciona o menu dentro da navigation viewer
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

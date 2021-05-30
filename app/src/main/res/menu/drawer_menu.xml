@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    //cria como se fosse uma categoria com os itens dentro
+    <item android:title="Analise de Bolton">
+        <menu>
+            <item
+                android:id="@+id/homeBTN"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="Home" />
+            <item
+                android:id="@+id/BTNboltonAnt"
+                android:icon="@drawable/calcbtn"
+                android:title="Analíse Anterior" />
+
+            <item
+                android:id="@+id/BTNboltonTot"
+                android:icon="@drawable/calcbtn"
+                android:title="Analíse Total" />
+        </menu>
+    </item>
+    <item android:title="Situações Clinicas">
+        <menu>
+            <item
+                android:id="@+id/situ1"
+                android:icon="@drawable/ic_saude"
+                android:title="Situações Clinicas 1" />
+            <item
+                android:id="@+id/situ2"
+                android:icon="@drawable/ic_saude"
+                android:title="Situações Clinicas 2" />
+        </menu>
+    </item>
+
+</menu>

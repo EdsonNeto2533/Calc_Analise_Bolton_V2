@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".boltonTotal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonCalc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewInfe"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/editTextResult"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/calcbtn"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+
+                app:srcCompat="@drawable/boltontotalbanner" />
+
+            <TextView
+                android:id="@+id/textViewPrin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:text="@string/strPrinAnt2"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textViewInfe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextSup"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="80dp"
+                android:text="Soma 6 a 6 inf." />
+
+            <TextView
+                android:id="@+id/textViewSup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextSup"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/textViewInfe"
+                android:text="Soma 6 a 6 sup." />
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButtonCalc"
+                android:layout_marginTop="20dp"
+                android:clickable="false"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/strBoltonAnt2"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/editTextInf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPrin"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/black"
+                android:ems="8"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                />
+
+            <EditText
+                android:id="@+id/editTextSup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPrin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/editTextInf"
+                android:backgroundTint="@color/black"
+                android:ems="8"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/editTextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSup"
+                android:layout_marginLeft="50dp"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="Resultado: " />
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

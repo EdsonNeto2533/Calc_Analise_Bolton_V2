@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora De Análise Bolton</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strPrinAnt">Para uma boa estética e função a razão do volume dos 6 dentes anteriores (3 a 3) deve ser cerca de 77,2%.</string>
+    <string name="strPrinAnt2">Para uma boa estética e função a razão do volume dos 12 dentes inferiores (6 a 6) deve ser cerca de 91,3%.</string>
+    <string name="strBoltonAnt">Valores acima de 77,2% revelam excesso de volume anterior o que seriam favoráveis ao desgaste interproximal ou exodontia de um incisivo inferior.</string>
+    <string name="strBoltonAnt2">Valores acima de 91,3% revelam excesso de volume dos dentes inferiores. Valores abaixo de 91,3% revelam excesso dos dentes superiores.
+Comparando com os valores de Bolton Anterior é possível avaliar se o excesso seria anterior ou posterior.</string>
+
+</resources>
